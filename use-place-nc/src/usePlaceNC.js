@@ -22,5 +22,5 @@ function generateCage(settings) {
 
   if (isNaN(count)) throw new Error(`${ERROR_BASE}: Invalid count ${count}`);
 
-  return [...new Array(count)].map(() => `${PLACENC_HOST}${config.join('/')}`);
+  return [...new Array(count)].map(() => `${PLACENC_HOST}/${config.join('/')}`);
 }
